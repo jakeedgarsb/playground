@@ -1,0 +1,30 @@
+[
+  {
+    "attributes": [{ "is_bakugo": true }, { "tier": "common" }],
+    "description": "This is Bakugo.",
+    "image_uri": "ipfs://QmTcLZRi9osQaJYVLH9JqfrfJWaFxjvUERb9JUvkTTYJyN/0.png",
+    "name": "Bakugo Yo",
+    "tokenId": 1
+  },
+  {
+    "attributes": [{ "is_bakugo": false }, { "tier": "common" }],
+    "description": "This is not Bakugo.",
+    "image_uri": "ipfs://QmTcLZRi9osQaJYVLH9JqfrfJWaFxjvUERb9JUvkTTYJyN/1.png",
+    "name": "Deku",
+    "tokenId": 2
+  },
+  {
+    "attributes": [{ "is_bakugo": false }, { "tier": "common" }],
+    "description": "This is not Bakugo.",
+    "image_uri": "ipfs://QmTcLZRi9osQaJYVLH9JqfrfJWaFxjvUERb9JUvkTTYJyN/2.png",
+    "name": "Midoria",
+    "tokenId": 3
+  },
+  {
+    "attributes": [{ "is_bakugo": true }, { "tier": "rare" }],
+    "description": "This is Bakugo.",
+    "image_uri": "ipfs://QmTcLZRi9osQaJYVLH9JqfrfJWaFxjvUERb9JUvkTTYJyN/3.png",
+    "name": "Bakugo",
+    "tokenId": 4
+  }
+]
