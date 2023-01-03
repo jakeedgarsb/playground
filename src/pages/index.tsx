@@ -51,7 +51,7 @@ export default function Home() {
     getMatchingNFTs,
     getFirstNFT,
     getRareNFTs,
-    getNftsByValue,
+    getNftTokenIds,
     // getTraitTypesArray,
     // getTraitOptions,
     // getTraitTypes,
@@ -61,8 +61,8 @@ export default function Home() {
   } = useNFTMetadata(NFTs)
   const nftArray = metadataArr
   const rareNfts = getRareNFTs(nftArray)
-  const matchingByTier = getNftsByValue(nftArray, 'tier', 'uncommon')
-  const matchingByHat = getNftsByValue(nftArray, 'has_hat', 'false')
+  const matchingByTier = getNftTokenIds(nftArray, 'tier', 'uncommon')
+  const matchingByHat = getNftTokenIds(nftArray, 'has_hat', 'false')
   const matchingNfts = getMatchingNFTs(nftArray, matchingByTier)
   // const attributes = getAttributes(nftArray)
   console.log(attributes)

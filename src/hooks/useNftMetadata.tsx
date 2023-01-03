@@ -54,7 +54,7 @@ export const useNFTMetadata = (json: any) => {
     return rareNFTs
   }
 
-  const getNftsByValue = (
+  const getNftTokenIds = (
     nftMetadataArray: NFTMetadata[],
     traitType: string,
     traitValue: string
@@ -150,7 +150,10 @@ export const useNFTMetadata = (json: any) => {
         for (const key in attributes) {
           if (Object.prototype.hasOwnProperty.call(attributes, key)) {
             const attribute = attributes[key]
-            if (attribute.trait_type === traitType) {
+            if (
+              attribute.trait_type === traitType &&
+              !traitValues.includes(attribute.trait_value)
+            ) {
               traitValues.push(attribute.trait_value)
             }
           }
@@ -216,7 +219,7 @@ export const useNFTMetadata = (json: any) => {
 
   return {
     getAttributes,
-    getNftsByValue,
+    getNftTokenIds,
     getMatchingNFTs,
     metadataArr,
     getFirstNFT,
